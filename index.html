@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABO1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////l9Pff8fS54ein2eOn2eL9/v684unr9vj7/f7c8PSl2eKHzNil2OLv+Prz+vue1eB3xdOq2uPm9Pf29/vy8/n3/Py13+eEyteZ097P6u/2+/zByeKOm8r8/f7u+Pq+4+qOz9uU0dzo9fjb4O5meLbh5fH0+vvV7fHx+fv8/P2Gk8Wbps+44eim2eLW2+xkdrXO1Oit3OWttthperja3u7u+Pn6+/2hrNJneLfFy+P7+/23v92IlcbN0ufx8/nj5/Kbp9BsfbltfrqAj8ORnsvg5PD+/v/v8ffQ1em0vduqtNfn6vS/61TcAAAAHHRSTlMAAAQqbK3Z8v0DN5ff+xqJ6jbC/kHBAjjp3qz8qSKHsgAAAAFiS0dEAf8CLd4AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfiChMPAx5FOtlkAAABSUlEQVQ4y4WTZ2OCMBCGc4IMEXAPjB10771t7dLuXbv3/v+/oNigIYjN+4HcJU9CcgMhVxASxLAkK4oshUUhBIgVqBEtqmNXelSLqF4EwDBjmFHMNADoejyRxD4lE/EGAZCScICkFCGc/YHrDkHOACON2yhtOABkTNxWZgYQZHPeqWKH18tlAakas6ezi3E1FQl5Fuhm3LyARD0AsIs9vSSmIrJwC9DXPzA4NEx8C0ktwMjo2PiE3YgFkokxOdUEpmdm5+YXXEBGCjEWl5bpHVZKq2tlMq+gAjHWNza9r9jarpD5QuMX1Z3dv3Fvn72T3LzkweFRfSgd+xJGn3lyeuZ8K+csYNFAXVzWrqr+bDmBoqG+vqnd3t3bDOCE2push8en55fXNzZZTLrfPz6/vn+oX083t2C4JccvWm7Z8xuH33r85v2v/X8Bp/FiyVLnL/0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMTAtMTlUMTU6MDM6MzArMDI6MDCzEaEaAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTEwLTE5VDE1OjAzOjMwKzAyOjAwwkwZpgAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg=="
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- linking the css file -->
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/index-744ca534.css" />
+  </head>
+  <body
+    class="lg:min-h-[100vh] lg:grid lg:place-content-center font-roboto lg:bg-darkSlateGray"
+  >
+    <!-- Sign-up form start -->
+    <main class="container mx-auto">
+      <div
+        class="flex flex-col lg:flex-row-reverse bg-white lg:h-full lg:p-6 lg:rounded-3xl"
+      >
+        <div class="">
+          <img
+            class="block lg:hidden"
+            src="assets/illustration-sign-up-mobile-228553d5.svg"
+            alt=""
+          />
+          <img
+            class="hidden lg:block"
+            src="assets/illustration-sign-up-desktop-e07b7486.svg"
+            alt=""
+          />
+        </div>
+        <article
+          class="px-6 py-6 space-y-4 md:px-0 lg:pr-12 lg:space-y-8 lg:pt-20 lg:pl-12"
+        >
+          <div class="space-y-4">
+            <h2 class="text-darkSlateGray font-bold text-4xl lg:text-5xl">
+              Stay updated!
+            </h2>
+            <p class="text-charcolGray">
+              Join 60,000+ product managers receiving monthly updates on:
+            </p>
+          </div>
+          <div>
+            <ul class="flex flex-col text-darkSlateGray space-y-2">
+              <li>Product discovery and building what matters</li>
+              <li>Measuring to ensure updates are a success</li>
+              <li>And much more!</li>
+            </ul>
+          </div>
+          <form class="space-y-3">
+            <div class="flex justify-between">
+              <p class="text-sm font-bold text-darkSlateGray">Email address</p>
+              <p class="hidden message text-tomato font-bold">
+                Valid email required
+              </p>
+            </div>
+            <div class="grid space-y-4 lg:space-y-8">
+              <input
+                type="email"
+                placeholder="email@company.com"
+                class="email-address border border-gray py-4 rounded-md px-4 focus:outline-darkSlateGray"
+              />
+              <a
+                href="#void"
+                class="border border-gray py-4 rounded-lg text-white bg-darkSlateGray font-bold newsteller text-center"
+              >
+                Subscribe to monthly newsletter
+              </a>
+            </div>
+          </form>
+        </article>
+      </div>
+    </main>
+    <!-- success message -->
+    <article
+      class="text-white p-4 mt-12 bg-white lg:p-8 lg:shadow-xl lg:rounded-xl lg:space-y-8 lg:max-w-[500px] hidden success"
+    >
+      <div class="space-y-8">
+        <img src="assets/icon-success-8cd8eb62.svg" alt="" />
+        <h2 class="text-4xl font-bold text-darkSlateGray lg:text-6xl">
+          Thanks for subscribing!
+        </h2>
+        <p class="text-charcolGray lg:max-w-[40ch]">
+          A confirmation email has been sent to
+          <span class="text-darkSlateGray font-bold"> ash@loremcompany.com</span
+          >. Please open it and click the button inside to confirm your
+          subscription.
+        </p>
+      </div>
+      <button
+        class="text-white bg-darkSlateGray py-4 rounded-lg text-center absolute bottom-12 w-[90%] right-0 left-0 mx-auto lg:static lg:w-full btn-gradient dismiss"
+      >
+        Dismiss message
+      </button>
+    </article>
+    <!-- Stay updated! Email address email@company.com  -->
+
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+
+    <!-- Thanks for subscribing! Dismiss message -->
+
+    <!-- Success message end -->
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="assets/script.js"></script>
+  </body>
+</html>
